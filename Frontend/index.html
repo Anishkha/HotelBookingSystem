@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hotel Reservation System</h1>
+
+        <!-- Room Reservation Form -->
+        <div class="form-container">
+            <h2>Reserve Room</h2>
+            <form id="reservationForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="number" id="age" placeholder="Your Age" required>
+                <input type="text" id="aadharNumber" placeholder="Your Aadhar Number" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="hotelName" placeholder="Hotel Name" required>
+                <button type="submit">Reserve Room</button>
+            </form>
+            <p id="reservationStatus"></p>
+        </div>
+
+        <!-- Confirm Reservation Form -->
+        <div class="form-container">
+            <h2>Confirm Reservation</h2>
+            <form id="confirmationForm">
+                <input type="number" id="reservationId" placeholder="Reservation ID" required>
+                <button type="submit">Confirm Reservation</button>
+            </form>
+            <p id="confirmationStatus"></p>
+        </div>
+
+        <!-- Cancel Reservation Form -->
+        <div class="form-container">
+            <h2>Cancel Reservation</h2>
+            <form id="cancelForm">
+                <input type="number" id="cancelReservationId" placeholder="Reservation ID" required>
+                <button type="submit">Cancel Reservation</button>
+            </form>
+            <p id="cancelStatus"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* General Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f5f7fa; /* Light pastel grayish blue */
+    color: #3a3a3a; /* Soft dark gray text */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.2rem;
+    color: #4b4b4b; /* Soft dark gray */
+    margin-bottom: 25px;
+}
+
+/* Form Container Styling */
+.form-container {
+    background-color: #ffffff; /* White background for form */
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+}
+
+/* Form Title */
+h2 {
+    font-size: 1.6rem;
+    color: #4e6e81; /* Muted blue-gray color */
+    margin-bottom: 15px;
+}
+
+/* Input Fields Styling */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 2px solid #d1d8e0; /* Soft muted gray */
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #444444; /* Darker text inside the input */
+    background-color: #f0f4f8; /* Light pastel gray-blue background */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #a1c6ea; /* Light soft blue when focused */
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background-color: #a1c6ea; /* Soft muted blue */
+    color: #ffffff;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7a9ec1; /* Slightly darker blue on hover */
+}
+
+/* Status Message Styling */
+p {
+    font-size: 1.1rem;
+    margin-top: 12px;
+    text-align: center;
+    color: #777777; /* Light gray for generic messages */
+}
+
+/* Success Status Message */
+#reservationStatus,
+#confirmationStatus,
+#cancelStatus {
+    color: #b0e57c; /* Soft pastel green for success */
+}
+
+/* Error Status Message */
+p.error {
+    color: #ff6f61; /* Coral red for error messages */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .form-container {
+        padding: 25px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        padding: 12px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
